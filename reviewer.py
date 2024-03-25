@@ -373,7 +373,7 @@ if __name__ == "__main__":
     )
     args = parser.parse_args()
 
-    REVIEWER_DIR_IN_PROJECT = args.directory + '/' + REVIEWER_DIR_IN_PROJECT
+    REVIEWER_DIR_IN_PROJECT = str(args.directory) + '/' + REVIEWER_DIR_IN_PROJECT
 
     IGNORE_EQUALS += list(args.ignore_equals)
     IGNORE_STARTS_WITH += list(args.ignore_starts_with)
