@@ -89,9 +89,9 @@ def project_tree(
     def custom_sort(y):
         p = os.path.join(dir_tree, y)
         if os.path.isdir(p):
-            return (1, y)
-        else:
             return (0, y)
+        else:
+            return (1, y)
 
     def filter_items(
             _items: list,
